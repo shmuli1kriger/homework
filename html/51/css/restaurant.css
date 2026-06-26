@@ -1,0 +1,39 @@
+h1, h2 {
+    text-align: center;
+    color: gold;
+    text-shadow: 
+        -2px -2px 0 #00b100,  
+        2px -2px 0 #00b100,
+        -2px  2px 0 #00b100,
+        2px  2px 0 #00b100; 
+     font-size: 4em;
+     background-color: rgb(110, 21, 21);
+     margin: 0;
+     letter-spacing: 8px;
+}
+h2 {
+     font-size: 2.25em;
+}
+nav {
+    text-align: center;
+    font-size: 1.25em;
+    background-color: yellow;
+    color: rgb(110, 21, 21);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a:visited{
+    color: rgb(160, 24, 160);
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+a:focus{
+    border: 2px solid rgb(110, 21, 21);;
+}
+a:active{
+    color: red;
+}
