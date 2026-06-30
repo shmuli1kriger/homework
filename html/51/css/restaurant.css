@@ -37,3 +37,7 @@ a:focus{
 a:active{
     color: red;
 }
+nav ol, nav li{
+    display: inline;
+    padding: 0;
+}
