@@ -10,7 +10,8 @@ header{
 .headingtext {
     font-family: 'Jim Nightshade', cursive;
     text-align: center;
-    background-color: rgb(110, 21, 21);
+    /*background-color: rgb(110, 21, 21);*/
+    background-color: rgb(176, 99, 12);
     padding-top: 0.25em;
     padding-bottom: 0.25em;
     color: gold;
