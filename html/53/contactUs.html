@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/restaurant.css">
+    <title>At Steak - Contact Us</title>
+    <style>
+        form{
+            margin-top: 2em;
+            margin-left: 2em;
+        }
+        label{
+            display: block;
+        }
+        input:not([type="submit"]){
+            display: block;
+            width: 33.3%;
+            margin-bottom: 1em;
+        }
+        [type="submit"]{
+            display: block;
+            margin-top: 1em;
+        }
+    </style>
+    
+    
+
+</head>
+<body>
+    <header>
+        <div class="headingtext">
+            <h1>At Steak</h1>
+            <h2>The Best Steak in Town!</h2>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="index.html"  >HOME</a> |</li>
+                <li><a href="ourMenu.html">OUR MENU</a> |</li>
+                <li><a href="aboutUs.html">ABOUT US</a> |</li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+            </ol>
+        </nav>
+    </header>
+    <a href="index.html">
+        <img src="images/logo.png" alt="At Steak Logo" class="logo">
+    </a>
+    <form method="post">
+        <label for="first name">first name:</label> 
+        <input type="text" name="first" id="first name" required>
+        <label for="last name">last name:</label> 
+        <input type="text" name="last" id="last name" required>
+        <label for="email">email:</label> 
+        <input type="email" name="email" id="email" required>
+        <label for="comments">comments:</label>
+        <textarea name="comments" id="comments" cols="50" rows="10" placeholder="enter your comments here"></textarea>
+        <input type="submit">
+    </form>
+    <footer>
+    <div>&copy; 2023 At Steak. All rights reserved.</div>
+</footer>
+</body>
+</html>
