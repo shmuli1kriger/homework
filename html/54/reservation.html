@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>At Steak - Book A Reservation</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+   <link rel="stylesheet" href="css/restaurant.css">
+   <style>
+        html{
+            background: #b0630c;
+            background: radial-gradient(circle, rgba(176, 99, 12, 1) 17%, rgba(214, 177, 28, 1) 75%);
+        }
+        form{
+            margin:2em;
+        }
+        input{
+            margin-bottom: 1.5em;
+            margin-top: .5em;
+            display: block;
+        }
+        [type="number"]{
+            width: 3em;
+        }
+        [type="submit"]{
+            margin-top: 3em;
+        }
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="headingtext">
+            <h1>At Steak</h1>
+            <h2>The Best Steak in Town!</h2>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="index.html"  >HOME</a> </li>
+                <li>|</li>
+                <li><a href="ourMenu.html">OUR MENU</a> </li>
+                <li>|</li>
+                <li><a href="reservation.html">BOOK A RESERVATION</a></li>
+                <li>|</li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+                <li>|</li>
+                <li><a href="aboutUs.html">ABOUT US</a> </li>
+            </ol>
+        </nav>
+    </header>
+    <form method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required minlength="2" placeholder="Enter Name">
+        <label for="phone">Phone:</label>
+        <input type="tel" name="tel" id="tel" 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}$" 
+            title="Please enter a valid 10-digit US/Canada phone number"  
+            placeholder="xxx-xxx-xxxx" required/>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+        <label for="number">Number of Guests:</label>
+        <input type="number" name="number" id="number" min="0" max="30" step="1" value="0" required/>
+        <label for="date">Date: </label>
+        <input type="date" name="date" id="date" min="2026-01-01" max="2028-12-31" value="2026-07-06" required/>
+        <label for="time">Time:</label>
+        <input type="time" name="time" id="time" min="17:00" max="23:59" required> 
+        <input type="submit">
+    </form>
+
+     <footer>
+    <div>&copy; 2023 At Steak. All rights reserved.</div>
+</footer>
+</body>
+</html>
