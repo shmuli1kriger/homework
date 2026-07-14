@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            gap: 2em;
+            grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+
+        }
+        div{
+            border: 5px solid black;
+            padding: 1em;
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template: repeat(6, 1fr)/ repeat(6, 1fr);
+        }
+        span{
+            background-color: black;
+            border-radius: 67px;
+            margin: 1em;
+        }
+        .one span:nth-child(1),
+        .three span:nth-child(3),
+        .five span:nth-child(5) {
+            grid-column: 3/ span 2;
+            grid-row: 3/ span 2;
+        }
+        :is(.two, .three, .four, .five, .six) span:nth-child(1){
+            grid-column: 1/ span 2;
+            grid-row: 5/ span 2;
+        }
+        :is(.two, .three, .four, .five, .six) span:nth-child(2){
+            grid-column: 5/ span 2;
+            grid-row: 1/ span 2;
+        }
+        :is(.four, .five, .six) span:nth-child(3) {
+            grid-column: 1/ span 2;
+            grid-row: 1/ span 2;
+        }
+        :is(.four, .five, .six) span:nth-child(4) {
+            grid-column: 5/ span 2;
+            grid-row: 5/ span 2;
+        }
+        .six span:nth-child(5) {
+            grid-column: 1/ span 2;
+            grid-row: 3/ span 2;
+        }
+        .six span:nth-child(6) {
+            grid-column: 5/ span 2;
+            grid-row: 3/ span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <span></span>
+    </div>
+    <div class="two">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="three">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="four">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="five">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="six">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
