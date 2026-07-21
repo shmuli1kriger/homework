@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body{            
+    font-family: Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+    '.  nav     .'
+    '.  header  .'
+    '.  article .'
+    '.  footer  .'
+    ;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+.main *:not(#table){
+    width: 100%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    color: white;
+    grid-area: nav;
+}
+nav ul{
+    margin-left: 8.33%;
+    padding-left: 8.33%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+header {
+    background-color: lightgrey;
+    padding: 75px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    border-radius: 5px;
+    grid-area: header;
+}
+header h1{
+    text-transform: uppercase ;
+}
+.main{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+    grid-area: article;
+}
+.productslist{
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        '.    title  .'
+        'img  img    img'
+        'p    p      p'
+        'hr1  hr1    hr1'
+        '.    title2 .'
+        'img2 img2   img2'
+        'p2   p2     p2'
+        'hr2  hr2    hr2'
+        '.    title3 .'
+        'img3 img3   img3'
+        'p3   p3     p3'
+        ;
+    gap: 1em;
+}
+#comphead{
+    grid-area: title;
+    text-align: center;
+}
+#compimg{
+    grid-area: img;
+}
+#compp{
+    grid-area: p;
+    text-align: justify;
+}
+#choirhead{
+    grid-area: title2;
+    text-align: center;
+}
+#choirimg{
+    grid-area: img2;
+}
+#choirp{
+    grid-area: p2;
+    text-align: justify;
+}  
+#candyhead{
+    grid-area: title3;
+    text-align: center;
+}
+#candyimg{
+    grid-area: img3;
+}
+#candyp{
+    grid-area: p3;
+    text-align: justify;
+}
+#hr1{
+    grid-area: hr1;
+    opacity: 0;
+}
+#hr2{
+    grid-area: hr2;
+    opacity: 0;
+}
+@media screen and (800px < width) {
+    .productslist{
+        grid-template-areas:
+            'title hr1 title2 hr2 title3'
+            'img   hr1 img2   hr2 img3'
+            'p     hr1 p2     hr2 p3'
+            ;
+    }
+    #hr1, #hr2{
+        color: gray;
+        opacity: 100;
+    }
+}
+.forminput{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.forminput li input{
+    min-width: max-content;
+    max-width: 30%;
+    display: inline;
+}
+#submit{
+    min-width: max-content;
+    max-width: 15%;
+}
+form{
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
+@media screen and (1000px < width) {
+    .forminput{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+form h1{
+    font-size: 25px;
+}
+input:not(#submit){
+    box-shadow: 3px 3px 1px black;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+#submit{
+    border-radius: 3px;
+    border: none;
+    box-shadow: 2px 2px 1px grey;
+}
+table{
+    border-collapse:collapse;
+    box-sizing: border-box;
+    width: 70% !important;
+    margin: auto;
+    display: block;
+    overflow-y: auto;
+}
+caption{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 20px;
+}
+th, td{
+    border: 2px solid black;
+    padding: 5px;
+}
+td{
+    text-align: end;
+}
+td:first-child:not(tfoot td){
+    text-align: center;
+    font-weight: bold;
+}
+tr:nth-child(odd):not(thead tr, tfoot tr){
+    background-color: lavender;
+}
+tr:not(thead tr, tfoot tr):hover{
+    background-color: blue;
+}
+td:last-child{
+    color: red;
+}
+tfoot tr td:first-child{
+    font-weight: bold;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    color: white;
+    grid-area: footer;
+}
+footer p{
+    margin-left: 8.33%;
+    padding-left: 8.33%;
+}
