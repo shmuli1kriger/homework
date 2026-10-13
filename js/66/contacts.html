@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: .5em;
+            
+        }
+        .form-group label {
+            display: inline-block;
+            width: 3em;
+        }
+        .form-group {
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+        #addContact {
+            display: none;
+            background-color: lightcyan;
+            border: 1px solid black;
+            padding: 1em;
+            height: 8.5em;
+            width: 15em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -4.25em;
+            margin-left: -7.5em;
+        }
+        #addContactButton {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <table id="contactsTable">
+        <thead>
+            <tr>
+                <th>first</th>
+                <th>last</th>
+                <th>email</th>
+                <th>phone</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="5">no contacts loaded</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="addContactButton">add contact</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, earum quidem. Ea praesentium dolor provident laborum vitae. Deleniti ipsa corrupti nobis perspiciatis iure illo accusantium, libero sequi, ipsam maxime incidunt voluptatibus? Adipisci beatae repellat tempore, ullam porro quidem eum qui, magnam illum nostrum cupiditate corporis laborum aut quo ex consectetur.</p>
+    <form id="addContact">
+        <div class="form-group">
+            <label for="first">first</label>
+            <input id="first" required>
+        </div>
+        <div class="form-group">
+            <label for="last">last</label>
+            <input id="last" required>
+        </div>
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">phone</label>
+            <input type="tel" id="phone">
+        </div>
+        <button id="add">add</button>
+        <button type="reset" id="reset">reset</button>
+        <button type="button" id="cancel">cancel</button>
+    </form>
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="contacts.js" type="module"></script>
+    <script type="module" src="contactList.js"></script>
+</body>
+</html>

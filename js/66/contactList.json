@@ -1,0 +1,62 @@
+[
+  {
+    "first": "John",
+    "last": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "555-010-3333"
+  },
+  {
+    "first": "Jane",
+    "last": "Smith",
+    "email": "jane.smith@example.com",
+    "phone": "555-011-3333"
+  },
+  {
+    "first": "Michael",
+    "last": "Johnson",
+    "email": "michael.j@example.net",
+    "phone": "555-012-3333"
+  },
+  {
+    "first": "Emily",
+    "last": "Davis",
+    "email": "emily.davis@example.org",
+    "phone": "555-013-3333"
+  },
+  {
+    "first": "David",
+    "last": "Brown",
+    "email": "dbrown@example.com",
+    "phone": "555-014-3333"
+  },
+  {
+    "first": "Sarah",
+    "last": "Miller",
+    "email": "sarah.m@example.net",
+    "phone": "555-015-3333"
+  },
+  {
+    "first": "James",
+    "last": "Wilson",
+    "email": "jwilson@example.org",
+    "phone": "555-016-3333"
+  },
+  {
+    "first": "Amanda",
+    "last": "Moore",
+    "email": "amanda.moore@example.com",
+    "phone": "555-017-3333"
+  },
+  {
+    "first": "Robert",
+    "last": "Taylor",
+    "email": "rtaylor@example.net",
+    "phone": "555-018-3333"
+  },
+  {
+    "first": "Lisa",
+    "last": "Anderson",
+    "email": "lisa.a@example.org",
+    "phone": "555-019-3333"
+  }
+]
