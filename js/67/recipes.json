@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Grilled Cheese Sandwich",
+    "category": "sandwiches"
+  },
+  {
+    "id": 2,
+    "name": "Simple Scrambled Eggs",
+    "category": "eggs"
+  },
+  {
+    "id": 3,
+    "name": "Garlic Butter Pasta",
+    "category": "pasta"
+  },
+  {
+    "id": 4,
+    "name": "Caprese Salad",
+    "category": "salads"
+  },
+  {
+    "id": 5,
+    "name": "Easy Chicken Stir-Fry",
+    "category": "chicken"
+  },
+  {
+    "id": 6,
+    "name": "Classic Banana Smoothie",
+    "category": "smoothies"
+  },
+  {
+    "id": 7,
+    "name": "Oven-Roasted Broccoli",
+    "category": "sides"
+  },
+  {
+    "id": 8,
+    "name": "Tuna Salad Sandwiches",
+    "category": "sandwiches"
+  },
+  {
+    "id": 9,
+    "name": "Homemade Tomato Soup",
+    "category": "soup"
+  },
+  {
+    "id": 10,
+    "name": "Avocado Toast with Poached Egg",
+    "category": "eggs"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": 6,
+  "name": "Classic Banana Smoothie",
+  "ingredients": [
+    "bananas",
+    "milk",
+    "yogurt",
+    "honey",
+    "ice"
+  ],
+  "directions": "Peel the bananas and break them into chunks. Add the bananas, milk, yogurt, honey, and ice to a blender. Blend on high until smooth and creamy. Taste, adjust sweetness with more honey if desired, and serve immediately.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Banana%20Smoothie.jpg?width=640"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "name": "Classic Grilled Cheese Sandwich",
+  "ingredients": [
+    "bread",
+    "butter",
+    "cheddar cheese"
+  ],
+  "directions": "Heat a skillet over medium heat. Butter one side of each bread slice. Place a slice butter-side down in the skillet and top with cheddar cheese. Cover with the second slice, butter-side up. Cook 2-3 minutes per side until golden brown and the cheese is melted. Slice and serve hot.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20cheese%20sandwich.jpg?width=640"
+}

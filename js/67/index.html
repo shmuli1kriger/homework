@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #recipeDropdown {
+            display: none;
+        }
+        #ingredientHeader {
+            display: none;
+        }
+        #directionHeader {
+            display: none;
+            margin-top: 2rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #image {
+            height: 200px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <label for="categoryDropdown"></label>
+    <select name="categoryDropdown" id="categoryDropdown">Choose a category:</select>
+    <label for="recipeDropdown"></label>
+    <select name="recipeDropdown" id="recipeDropdown">Choose a recipe:</select>
+    <h2 id="name"></h2>
+    <div>
+        <img id="image" src="">
+    </div>
+    <div>
+        <h3 id="ingredientHeader">Ingredients</h3>
+        <ul id="ingredientList"></ul>
+    </div>
+    <h3 id="directionHeader">Directions</h3>
+    <p id="directions"></p>
+    <script type="module" src="recipes.js"></script>
+</body>
+</html>

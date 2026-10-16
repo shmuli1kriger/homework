@@ -1,0 +1,15 @@
+{
+  "id": 8,
+  "name": "Tuna Salad Sandwiches",
+  "ingredients": [
+    "canned tuna",
+    "mayonnaise",
+    "celery",
+    "bread",
+    "lettuce",
+    "salt",
+    "black pepper"
+  ],
+  "directions": "Drain the canned tuna and flake it into a bowl. Finely dice the celery and add it to the tuna. Stir in the mayonnaise, salt, and pepper until combined. Layer lettuce on a slice of bread, top with the tuna salad, and cover with a second slice. Cut in half and serve.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuna%20salad%20sandwich.jpg?width=640"
+}

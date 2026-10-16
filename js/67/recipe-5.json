@@ -1,0 +1,15 @@
+{
+  "id": 5,
+  "name": "Easy Chicken Stir-Fry",
+  "ingredients": [
+    "chicken breast",
+    "broccoli",
+    "bell pepper",
+    "soy sauce",
+    "garlic",
+    "ginger",
+    "vegetable oil"
+  ],
+  "directions": "Slice the chicken into bite-size pieces; cut the broccoli into florets and the bell pepper into strips. Heat vegetable oil in a wok or large skillet over high heat. Cook the chicken 5-6 minutes until browned and cooked through, then set aside. Stir-fry the broccoli and bell pepper for 3-4 minutes until crisp-tender. Add minced garlic and ginger and cook for 30 seconds. Return the chicken to the pan, add soy sauce, and toss until heated through. Serve hot over rice.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MP%20-%20chicken%20stir%20fry%202.jpg?width=640"
+}

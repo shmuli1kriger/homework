@@ -1,0 +1,13 @@
+{
+  "id": 2,
+  "name": "Simple Scrambled Eggs",
+  "ingredients": [
+    "eggs",
+    "butter",
+    "salt",
+    "black pepper",
+    "milk"
+  ],
+  "directions": "Crack the eggs into a bowl, add milk, salt, and pepper, and whisk well. Melt butter in a nonstick skillet over medium-low heat. Pour in the eggs and let them set for a few seconds. Gently stir and fold with a spatula until soft curds form. Remove from heat while still slightly glossy and serve immediately.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Scrambled%20eggs%20with%20basil.jpg?width=640"
+}

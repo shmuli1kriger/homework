@@ -1,0 +1,14 @@
+{
+  "id": 3,
+  "name": "Garlic Butter Pasta",
+  "ingredients": [
+    "spaghetti",
+    "butter",
+    "garlic",
+    "parsley",
+    "parmesan",
+    "salt"
+  ],
+  "directions": "Cook the spaghetti in salted boiling water until al dente; reserve 1/2 cup pasta water, then drain. Melt butter in a large skillet over medium-low heat and sauté minced garlic for 1-2 minutes until fragrant. Add the pasta and a splash of pasta water, tossing to coat. Season with salt and toss in the parsley and parmesan. Serve immediately with extra parmesan.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Spaghetti%20aglio%20e%20olio.jpg?width=640"
+}

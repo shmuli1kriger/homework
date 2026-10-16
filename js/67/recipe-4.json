@@ -1,0 +1,14 @@
+{
+  "id": 4,
+  "name": "Caprese Salad",
+  "ingredients": [
+    "tomatoes",
+    "fresh mozzarella",
+    "fresh basil",
+    "olive oil",
+    "balsamic glaze",
+    "salt"
+  ],
+  "directions": "Slice the tomatoes and fresh mozzarella into 1/4-inch rounds. Arrange them on a plate, alternating and overlapping the slices. Tuck fresh basil leaves between the slices. Drizzle with olive oil and balsamic glaze. Sprinkle with salt and serve right away.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Insalata%20Caprese%20%28from%20Poznan%29.JPG?width=640"
+}

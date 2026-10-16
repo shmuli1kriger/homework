@@ -1,0 +1,15 @@
+{
+  "id": 9,
+  "name": "Homemade Tomato Soup",
+  "ingredients": [
+    "tomatoes",
+    "onion",
+    "garlic",
+    "vegetable broth",
+    "olive oil",
+    "basil",
+    "salt"
+  ],
+  "directions": "Chop the onion and garlic and roughly chop the tomatoes. Heat olive oil in a pot over medium heat and sauté the onion for 5 minutes until soft. Add the garlic and cook for 1 minute. Add the tomatoes, vegetable broth, and salt; bring to a boil, then simmer 20 minutes. Add the basil and blend with an immersion blender until smooth. Taste, adjust seasoning, and serve hot.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato%20soup.jpg?width=640"
+}

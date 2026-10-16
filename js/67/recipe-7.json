@@ -1,0 +1,14 @@
+{
+  "id": 7,
+  "name": "Oven-Roasted Broccoli",
+  "ingredients": [
+    "broccoli",
+    "olive oil",
+    "garlic",
+    "salt",
+    "black pepper",
+    "lemon"
+  ],
+  "directions": "Preheat the oven to 425°F (220°C). Cut the broccoli into florets and toss with olive oil, minced garlic, salt, and pepper. Spread in a single layer on a baking sheet. Roast 18-22 minutes, until tender and browned at the edges. Squeeze fresh lemon juice over the top and serve.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Liat%20Portal%20for%20Foodie%20Disorder%20-%20Roasted%20broccoli%20cauliflower%20and%20onions.jpg?width=640"
+}

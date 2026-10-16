@@ -1,0 +1,15 @@
+{
+  "id": 10,
+  "name": "Avocado Toast with Poached Egg",
+  "ingredients": [
+    "bread",
+    "avocado",
+    "eggs",
+    "lemon juice",
+    "salt",
+    "black pepper",
+    "red pepper flakes"
+  ],
+  "directions": "Toast the bread until golden and crisp. Mash the avocado with lemon juice, salt, and pepper. Bring a pot of water to a gentle simmer and stir to create a light whirlpool. Crack in an egg and poach for 3-4 minutes until the white is set but the yolk is runny. Spread the avocado on the toast and top with the poached egg. Sprinkle with red pepper flakes, salt, and pepper, and serve.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Smashed%20Avocado%20On%20Toast%20%28with%20one%20poached%20egg%29%20-%20Jonny%27s%202026-01-06.jpg?width=640"
+}
