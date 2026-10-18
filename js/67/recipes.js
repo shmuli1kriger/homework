@@ -5,7 +5,7 @@ const recipeName = document.querySelector('#name');
 const ingredientList = document.querySelector('#ingredientList');
 const ingredientHeader = document.querySelector('#ingredientHeader');
 const image = document.querySelector('#image');
-const directionHeader = document.querySelector('#directionHeader');
+const directionsHeader = document.querySelector('#directionsHeader');
 const directions = document.querySelector('#directions');
 const selectedIdArray = [];
 let recipesInfo;
@@ -17,7 +17,7 @@ try{
         throw new Error(`${response.status} - ${response.statusText}`);
     }
     
-    const recipesInfo = await response.json();
+    recipesInfo = await response.json();
     const categoryArray = [];
     recipesInfo.forEach(recipe => {
         if (!categoryArray.includes(recipe.category)) {
@@ -32,20 +32,11 @@ try{
 }
 categorydropdown.addEventListener('change', async e => {
     const category = e.target.value;
-    try{
-        const response = await fetch('recipes.json');
-        if (!response.ok) {
-            throw new Error(`${response.status} - ${response.statusText}`);
+    recipesInfo.forEach(recipe => {
+        if (recipe.category === category) {
+            selectedIdArray.push(recipe.id);
         }
-        recipesInfo = await response.json();
-        recipesInfo.forEach(recipe => {
-            if (recipe.category === category) {
-                selectedIdArray.push(recipe.id);
-            }
-        });
-    } catch(e) {
-        console.Error(e);
-    } 
+    });
     selectedIdArray.forEach(id => {
         recipesInfo.forEach(recipe => {
             if (recipe.id === id) {
@@ -73,7 +64,7 @@ recipedropdown.addEventListener('change', async () => {
         recipeDetails.ingredients.forEach(ingredient => {
             ingredientList.innerHTML += `<li>${ingredient}</li>`;
         });
-        directionHeader.style.display = 'block';
+        directionsHeader.style.display = 'block';
         directions.innerHTML = '';
         directions.innerText = recipeDetails.directions;
     } catch(e) {
