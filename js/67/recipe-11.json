@@ -1,0 +1,16 @@
+{
+  "id": 11,
+  "name": "Fluffy Buttermilk Pancakes",
+  "ingredients": [
+    "all-purpose flour",
+    "sugar",
+    "baking powder",
+    "salt",
+    "milk",
+    "egg",
+    "melted butter",
+    "maple syrup"
+  ],
+  "directions": "Whisk the flour, sugar, baking powder, and salt in a large bowl. In another bowl, whisk the milk, egg, and melted butter, then pour into the dry ingredients and stir until just combined; a few lumps are fine. Heat a lightly greased skillet over medium heat. Pour about 1/4 cup of batter per pancake and cook until bubbles form on the surface, about 2 minutes. Flip and cook another 1-2 minutes until golden. Serve warm with maple syrup.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pancake%20with%20maple%20syrup%201.jpg?width=640"
+}

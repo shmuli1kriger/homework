@@ -1,0 +1,16 @@
+{
+  "id": 12,
+  "name": "Fresh Guacamole",
+  "ingredients": [
+    "ripe avocados",
+    "lime juice",
+    "red onion",
+    "tomato",
+    "cilantro",
+    "jalapeño",
+    "garlic",
+    "salt"
+  ],
+  "directions": "Halve the avocados, remove the pits, and scoop the flesh into a bowl. Mash with a fork to your desired texture. Finely chop the onion, tomato, cilantro, jalapeño, and garlic and fold them in along with the lime juice. Season with salt, taste, and adjust. Serve right away with tortilla chips.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Guacamole%20IMGP1256.jpg?width=640"
+}

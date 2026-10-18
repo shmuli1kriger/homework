@@ -1,0 +1,15 @@
+{
+  "id": 19,
+  "name": "Stovetop Mac and Cheese",
+  "ingredients": [
+    "elbow macaroni",
+    "butter",
+    "all-purpose flour",
+    "whole milk",
+    "sharp cheddar cheese",
+    "salt",
+    "black pepper"
+  ],
+  "directions": "Cook the macaroni in salted boiling water until al dente and drain. In the same pot, melt the butter over medium heat, whisk in the flour, and cook for 1 minute. Slowly whisk in the milk and cook, stirring, for 5 minutes until thickened. Remove from the heat and stir in the grated cheddar until melted and smooth. Add the macaroni, season with salt and pepper, and stir to coat.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Macaroni%20and%20cheese.jpg?width=640"
+}

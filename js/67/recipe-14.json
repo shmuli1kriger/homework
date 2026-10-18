@@ -1,0 +1,14 @@
+{
+  "id": 14,
+  "name": "Classic Caesar Salad",
+  "ingredients": [
+    "romaine lettuce",
+    "croutons",
+    "Parmesan cheese",
+    "Caesar dressing",
+    "lemon juice",
+    "black pepper"
+  ],
+  "directions": "Wash and dry the romaine, then tear or chop it into bite-sized pieces. Place in a large bowl and toss with the Caesar dressing and a squeeze of lemon juice until evenly coated. Top with croutons and shaved Parmesan, finish with freshly ground black pepper, and serve immediately.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caesar-salad.jpg?width=640"
+}

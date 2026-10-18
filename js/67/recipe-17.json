@@ -1,0 +1,14 @@
+{
+  "id": 17,
+  "name": "Strawberry Banana Smoothie",
+  "ingredients": [
+    "strawberries",
+    "banana",
+    "plain yogurt",
+    "milk",
+    "honey",
+    "ice cubes"
+  ],
+  "directions": "Add the strawberries, banana, yogurt, milk, honey, and ice to a blender. Blend on high until completely smooth and creamy, about 1 minute. Pour into glasses and serve immediately.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Strawberry%20smoothie%202.jpg?width=640"
+}

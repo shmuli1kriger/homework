@@ -1,0 +1,18 @@
+{
+  "id": 16,
+  "name": "Chicken Noodle Soup",
+  "ingredients": [
+    "chicken breast",
+    "egg noodles",
+    "carrots",
+    "celery",
+    "onion",
+    "garlic",
+    "chicken broth",
+    "salt",
+    "black pepper",
+    "fresh parsley"
+  ],
+  "directions": "In a large pot, sauté the chopped onion, carrots, celery, and garlic until softened. Add the chicken broth and chicken breast and bring to a boil, then simmer for 20 minutes until the chicken is cooked through. Remove the chicken, shred it, and return it to the pot. Add the egg noodles and cook until tender, about 6-8 minutes. Season with salt and pepper, stir in the parsley, and serve hot.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20Noodle%20Soup.jpg?width=640"
+}

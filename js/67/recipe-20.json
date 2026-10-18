@@ -1,0 +1,14 @@
+{
+  "id": 20,
+  "name": "Creamy Mashed Potatoes",
+  "ingredients": [
+    "russet potatoes",
+    "butter",
+    "milk",
+    "salt",
+    "black pepper",
+    "garlic powder"
+  ],
+  "directions": "Peel and cube the potatoes and place them in a pot of cold salted water. Bring to a boil and cook until fork-tender, about 15-20 minutes. Drain well and return to the pot. Add the butter, warm milk, garlic powder, salt, and pepper, and mash until smooth and creamy. Serve hot.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MashedPotatoes.jpg?width=640"
+}

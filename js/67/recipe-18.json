@@ -1,0 +1,16 @@
+{
+  "id": 18,
+  "name": "Vegetable Omelette",
+  "ingredients": [
+    "eggs",
+    "bell pepper",
+    "onion",
+    "spinach",
+    "cheddar cheese",
+    "butter",
+    "salt",
+    "black pepper"
+  ],
+  "directions": "Beat the eggs with salt and pepper. Melt half the butter in a skillet over medium heat and sauté the diced bell pepper and onion until soft; add the spinach until wilted, then set the vegetables aside. Melt the remaining butter, pour in the eggs, and cook until the edges set. Spoon the vegetables and cheddar over one half, fold the omelette over, and cook another minute until the cheese melts.",
+  "pictureUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Vegetable%20Omelette%20with%20slice%20of%20bread%20and%20chutney.JPG?width=640"
+}

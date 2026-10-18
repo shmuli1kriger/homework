@@ -7,16 +7,12 @@ const ingredientHeader = document.querySelector('#ingredientHeader');
 const image = document.querySelector('#image');
 const directionsHeader = document.querySelector('#directionsHeader');
 const directions = document.querySelector('#directions');
-const selectedIdArray = [];
 let recipesInfo;
-let selectedRecipe;
-let selectedRecipeId;
 try{
     const response = await fetch('recipes.json');
     if (!response.ok) {
         throw new Error(`${response.status} - ${response.statusText}`);
     }
-    
     recipesInfo = await response.json();
     const categoryArray = [];
     recipesInfo.forEach(recipe => {
@@ -28,29 +24,23 @@ try{
                 categorydropdown.innerHTML += `<option value="${item}">${item}</option>`;
             });
 } catch(e) {
-    console.Error(e);
+    console.error(e);
 }
 categorydropdown.addEventListener('change', async e => {
     const category = e.target.value;
+    recipedropdown.style.display = 'inline-block';
+    recipedropdown.innerHTML = `<option value="">Please choose a recipe</option>`;
     recipesInfo.forEach(recipe => {
         if (recipe.category === category) {
-            selectedIdArray.push(recipe.id);
+            recipedropdown.innerHTML += `<option value="${recipe.id}">${recipe.name}</option>`;
         }
     });
-    selectedIdArray.forEach(id => {
-        recipesInfo.forEach(recipe => {
-            if (recipe.id === id) {
-                selectedRecipe = recipe.name;
-                selectedRecipeId = recipe.id;
-            }
-        });
-        recipedropdown.style.display = 'inline-block';
-        recipedropdown.innerHTML = '';
-        recipedropdown.innerHTML += `<option value="">Please choose a recipe</option>`;
-        recipedropdown.innerHTML+= `<option value="${selectedRecipe}">${selectedRecipe}</option>`;
-    });
 });
-recipedropdown.addEventListener('change', async () => {
+recipedropdown.addEventListener('change', async e => {
+    const selectedRecipeId = e.target.value;
+    if (!selectedRecipeId) {
+        return;
+    }
     try{
         const response = await fetch(`recipe-${selectedRecipeId}.json`);
         if (!response.ok) {
@@ -68,6 +58,6 @@ recipedropdown.addEventListener('change', async () => {
         directions.innerHTML = '';
         directions.innerText = recipeDetails.directions;
     } catch(e) {
-        console.Error(e);
+        console.error(e);
     }
 });

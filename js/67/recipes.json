@@ -48,5 +48,55 @@
     "id": 10,
     "name": "Avocado Toast with Poached Egg",
     "category": "eggs"
+  },
+  {
+    "id": 11,
+    "name": "Fluffy Buttermilk Pancakes",
+    "category": "breakfast"
+  },
+  {
+    "id": 12,
+    "name": "Fresh Guacamole",
+    "category": "sides"
+  },
+  {
+    "id": 13,
+    "name": "Fettuccine Alfredo",
+    "category": "pasta"
+  },
+  {
+    "id": 14,
+    "name": "Classic Caesar Salad",
+    "category": "salads"
+  },
+  {
+    "id": 15,
+    "name": "Lemon Herb Baked Salmon",
+    "category": "fish"
+  },
+  {
+    "id": 16,
+    "name": "Chicken Noodle Soup",
+    "category": "soup"
+  },
+  {
+    "id": 17,
+    "name": "Strawberry Banana Smoothie",
+    "category": "smoothies"
+  },
+  {
+    "id": 18,
+    "name": "Vegetable Omelette",
+    "category": "eggs"
+  },
+  {
+    "id": 19,
+    "name": "Stovetop Mac and Cheese",
+    "category": "pasta"
+  },
+  {
+    "id": 20,
+    "name": "Creamy Mashed Potatoes",
+    "category": "sides"
   }
 ]
