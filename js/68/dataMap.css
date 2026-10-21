@@ -5,9 +5,33 @@ html, body, #map {
         }
 body {
     display: grid;
-    justify-content: center;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    background: linear-gradient(135deg, #fffaf5, #fde8d8);
+    color: #3d3a38;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+#aside {
+    grid-column: 1;
+    grid-row: 2;
+    background: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(8px);
+    padding: 16px;
+    overflow-y: auto;
+    border-right: 1px solid #ecd5c3;
+    display: none;
+}
+#aside img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 #form {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-content: center;
+  padding: 24px 0;
   display: flex;
   align-items: center;
 }
@@ -16,26 +40,35 @@ body {
   flex: 1;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #e3c9b5;
   border-radius: 4px 0 0 4px;
   outline: none;
   max-width: 28ch;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(120, 80, 50, .15);
 }
 
 #submitButton {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007BFF;
+  background-color: #c8643b;
   color: white;
-  border: 1px solid #007BFF;
+  border: 1px solid #c8643b;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(120, 80, 50, .15);
 }
 
 #submitButton:hover {
-  background-color: #0056b3;
+  background-color: #a94f2b;
+  border-color: #a94f2b;
 }
 #map {
-    height: 1000px;
-    width: 1000px;
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(120, 80, 50, .2);
+    height: 100%;
+    width: 100%;
+    display: none;
 }
