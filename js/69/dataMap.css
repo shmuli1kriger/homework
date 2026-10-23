@@ -1,0 +1,103 @@
+html, body, #map {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+body {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    background: linear-gradient(135deg, #fffaf5, #fde8d8);
+    color: #3d3a38;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+#sidebar {
+    grid-column: 1;
+    border-right: 1px solid black;
+    background: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(8px);
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+#sidebar img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    padding: 0;
+}
+#form {
+  justify-content: center;
+  padding: 24px 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e3c9b5;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  max-width: 28ch;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(120, 80, 50, .15);
+}
+#places {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.placeLi {
+  margin: 1em 0.5em;
+  border: 1px solid black;
+  border-radius: 8px;
+  
+}
+.placeLi:hover {
+  cursor: pointer;
+}
+.wrapper {
+  margin: 0.5em;
+  overflow-wrap: anywhere;
+}
+#submitButton, #clearButton {
+  flex: none;
+  padding: 10px 8px;
+  font-size: 1rem;
+  background-color: #c8643b;
+  color: white;
+  border: 1px solid #c8643b;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(120, 80, 50, .15);
+}
+#clearButton {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+#submitButton:hover, #clearButton:hover {
+  background-color: #a94f2b;
+  border-color: #a94f2b;
+}
+#map {
+    grid-column: 2;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(120, 80, 50, .2);
+    height: 100%;
+    width: 100%;
+}
+.summary{
+  height: 0;
+  transition: 2s;
+  overflow: hidden;
+}
+.active {
+  height: 10em;
+  overflow-y: auto;
+}
