@@ -1,5 +1,16 @@
+const controlsElem = document.querySelector('#controls');
+const mainElem = document.querySelector('#main');
 const partsElem = document.querySelector('#parts');
 const music = document.querySelector('#music');
+const modal = document.querySelector('#modal');
+const viewSavedButton = document.querySelector('#viewSavedButton');
+const savedPicturesBox = document.querySelector('#savedPicturesBox');
+const savedPicturesList = document.querySelector('#savedPicturesList');
+const xButton = document.querySelector('#xButton');
+const clearHistoryButton = document.querySelector('#clearHistoryButton');
+const volumeButton = document.querySelector('#volumeButton');
+const saveButton = document.querySelector('#saveButton');
+const resetButton = document.querySelector('#resetButton');
 const partsButton = document.querySelector('#partsButton');
 const hatsButton = document.querySelector('#hatsButton');
 const eyesButton = document.querySelector('#eyesButton');
@@ -16,7 +27,11 @@ const buttons = [hatsButton,
                 handsButton, 
                 feetButton
             ];
+let musicPlaying = true;
 let offset, dragged;
+let currentZIndex = 1000;
+let savedPictures = JSON.parse(localStorage.getItem('MrPotatoHeadPics')) || [];
+
 function addImages(button, type, numberOfPics) {
     button.addEventListener('click', () => {
         for (let i = 1; i <= numberOfPics; i++) {
@@ -28,7 +43,7 @@ function addImages(button, type, numberOfPics) {
         partsButton.style.display = 'block';
         partsButton.style.height = '25px';
         partsButton.style.maxWidth = '50px';
-        partsButton.addEventListener('click', partsButtonClick);
+        partsButton.addEventListener('click', resetParts);
     });  
 }
 
@@ -46,6 +61,7 @@ window.addEventListener('mousedown', e => {
     if (part) {
         e.preventDefault();
         dragged = part;
+        dragged.style.zIndex = ++currentZIndex;
         if (getComputedStyle(dragged).position !== 'fixed') {
             const rect = dragged.getBoundingClientRect();
             dragged.style.position = 'fixed';
@@ -64,16 +80,23 @@ function handleMouseMove(e) {
     dragged.style.left = `${e.clientX - offset.x}px`;
 }
 
-function handleMouseUp() {
+function handleMouseUp(e) {
+    [mainElem, controlsElem].forEach(container => {
+        const rect = container.getBoundingClientRect();
+        if (e.clientX >= rect.left && e.clientX <= rect.right &&
+            e.clientY >= rect.top && e.clientY <= rect.bottom) {
+            container.appendChild(dragged);
+        }
+    });
     window.removeEventListener('mousemove', handleMouseMove);
     window.removeEventListener('mouseup', handleMouseUp);
 }
 
 
-function partsButtonClick() {
+function resetParts() {
     partsButton.style.display = 'none';
     partsElem.querySelectorAll('.partImg').forEach(part => {
-        if (getComputedStyle(part).position !== 'fixed')
+        
             part.remove();
     });
     buttons.forEach(button => {
@@ -91,5 +114,97 @@ function addStylingButtons(element) {
         
     });
 }
-
 music.volume = 0.5;
+volumeButton.addEventListener('click', () => {
+    if (musicPlaying) {
+        music.pause();
+        volumeButton.style.backgroundPosition = 'left';
+        musicPlaying = false;
+    } else {
+        music.currentTime = 0;
+        music.play();
+        volumeButton.style.backgroundPosition = 'right';
+        musicPlaying = true;
+    }
+});
+saveButton.addEventListener('click', () => {
+    const picture = [];
+    const mainRect = mainElem.getBoundingClientRect();
+    mainElem.querySelectorAll('.partImg').forEach(part => {
+        const rect = part.getBoundingClientRect();
+        picture.push({
+            src: part.querySelector('img').getAttribute('src'),
+            left: rect.left - mainRect.left,
+            top: rect.top - mainRect.top
+        });
+    });
+    savedPictures.push(picture);
+    localStorage.setItem('MrPotatoHeadPics', JSON.stringify(savedPictures));
+});
+
+resetButton.addEventListener('click', () => {
+    [mainElem, controlsElem].forEach(container => {
+        container.querySelectorAll('.partImg').forEach(part => part.remove());
+    });
+    resetParts();
+});
+
+viewSavedButton.addEventListener('click', () => {
+    modal.style.display = 'block';
+    modal.style.zIndex = currentZIndex + 100;
+    savedPicturesBox.style.display = 'block';
+    savedPicturesBox.style.zIndex = currentZIndex + 200;
+    savedPicturesBox.querySelectorAll('.savedPicture').forEach(p => p.remove());
+    const mainRect = mainElem.getBoundingClientRect();
+    savedPictures.forEach(picture => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'savedPicture';
+        wrapper.style.width = mainRect.width + 'px';
+        wrapper.style.height = mainRect.height + 'px';
+        picture.forEach(part => {
+            const img = document.createElement('img');
+            img.src = part.src;
+            img.style.position = 'absolute';
+            img.style.left = part.left + 'px';
+            img.style.top = part.top + 'px';
+            img.style.height = '50px';
+            wrapper.appendChild(img);
+        });
+        const li = document.createElement('li');
+        li.append(wrapper);
+        li.addEventListener('click', e => {
+            console.log(e);
+            closeSavedPicturesBox();
+            mainElem.querySelectorAll('.partImg').forEach(part => part.remove());
+            const mainRect = mainElem.getBoundingClientRect();
+            picture.forEach(part => {
+                const div = document.createElement('div');
+                div.className = 'partImg';
+                div.style.position = 'fixed';
+                div.style.left = `${mainRect.left + part.left}px`;
+                div.style.top = `${mainRect.top + part.top}px`;
+                div.style.zIndex = ++currentZIndex;
+
+                const img = document.createElement('img');
+                img.src = part.src;
+                div.appendChild(img);
+
+                mainElem.appendChild(div);
+            });
+        });
+        savedPicturesList.prepend(li);
+    });
+});
+
+xButton.addEventListener('click', () => {
+    closeSavedPicturesBox();
+});
+function closeSavedPicturesBox() {
+    savedPicturesBox.style.display = 'none';
+    modal.style.display = 'none';
+}
+clearHistoryButton.addEventListener('click', () => {
+    savedPictures = [];
+    savedPicturesList.querySelectorAll('li').forEach(pic => pic.remove());
+    localStorage.removeItem('MrPotatoHeadPics');
+});

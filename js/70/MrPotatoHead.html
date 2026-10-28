@@ -8,11 +8,20 @@
 </head>
 <body>
     <div id="controls">
-        <audio src="music/music.mp3" id="gameMusic" preload="auto" autoplay loop>
+        <audio src="music/music.mp3" id="music" preload="auto" autoplay loop>
             <source src="calm-game-music.mp3" type="audio/mpeg">
             <source src="calm-game-music.ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
+        <div id="leftButtonBar">
+            <button id="volumeButton"></button>
+            <button id="viewSavedButton">View Saved Pictures</button>
+        </div>
+        <div id="rightButtonBar">
+            <button id="saveButton">save</button>
+            <button id="resetButton">reset</button>
+        </div>
+        
     </div>
     <div id="main">
         <img src="images/potato.png" id="potato">
@@ -27,8 +36,12 @@
         <button id="handsButton">hands</button>
         <button id="feetButton">feet</button>
     </div>
-
-
+    <div id="savedPicturesBox">
+        <button id="xButton">X</button>
+        <button id="clearHistoryButton">Clear All History</button>
+        <ul id="savedPicturesList"></ul>
+    </div>
+    <div id="modal"></div>
     <script type="module" src="MrPotatoHead.js"></script>
 </body>
 </html>
