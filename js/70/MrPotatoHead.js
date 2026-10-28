@@ -115,6 +115,15 @@ function addStylingButtons(element) {
     });
 }
 music.volume = 0.5;
+music.play().catch(() => {
+    musicPlaying = false;
+    volumeButton.style.backgroundPosition = 'left';
+    document.addEventListener('pointerdown', () => {
+        music.play();
+        musicPlaying = true;
+        volumeButton.style.backgroundPosition = 'right';
+    }, { once: true });
+});
 volumeButton.addEventListener('click', () => {
     if (musicPlaying) {
         music.pause();
