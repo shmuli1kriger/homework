@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #theCanvas {
+        display: block;
+      }
+      ul {
+        margin: 0;
+        padding: 1em;
+        box-sizing: border-box;
+        height: 50px;
+        background-color: azure;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: space-around;
+        align-items: center;
+      }
+      input {
+        margin-left: 1em;
+      }
+      #radiusInput {
+        width: 5ch;
+      }
+    </style>
+</head>
+<body>
+    <ul id="navbar">
+        <li>Select a ball color:<input type="color" id="colorInput"></li>
+        <li>Enter the ball radius:<input type="number" id="radiusInput"></li>
+        <li><button id="dropButton">Drop ball</button></li>
+    </ul>
+    <canvas id="theCanvas"></canvas>
+
+
+    <script type="module" src="balls.js"></script>
+</body>
+</html>
