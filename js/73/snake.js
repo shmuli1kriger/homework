@@ -16,18 +16,31 @@ window.addEventListener('resize', sizeCanvas);
 const snakeHead = document.createElement('img');
 snakeHead.src = 'media/snakeHead.png';
 
+const apple = document.createElement('img');
+apple.src = 'media/apple.png';
 
 let x = -SNAKE_SIZE;
 let y = 0;
 let direction = 'ArrowRight';
 let score = 0;
 let gameLoop;
-let playButton = null;
+let playButton;
+let appkleX;
+let appleY;
+
+function getRandomNumber(min, max) {
+        return Math.floor((Math.random() * (max - min + 1))) + min;
+    }
 
 snakeHead.onload = loadGame;
 
 function loadGame() {
     backgroundMusic.play();
+    let ax = getRandomNumber(0, theCanvas.width - SNAKE_SIZE);
+    appkleX = ax - (ax % SNAKE_SIZE);
+    let ay = getRandomNumber(0, theCanvas.height - SNAKE_SIZE)
+    appleY = ay - (ay % SNAKE_SIZE);
+
     gameLoop = setInterval(() => { 
         context.clearRect(0, 0, theCanvas.width, theCanvas.height);
         switch(direction) {
@@ -55,6 +68,7 @@ function loadGame() {
         }
 
         context.drawImage(snakeHead, x, y);
+        context.drawImage(apple, appkleX, appleY);
         displayScore();
         
     }, 500);
