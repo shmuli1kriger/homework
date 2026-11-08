@@ -30,17 +30,20 @@ let appleY;
 
 function getRandomNumber(min, max) {
         return Math.floor((Math.random() * (max - min + 1))) + min;
-    }
+}
+
+function createRandomApplePosition() {
+    const ax = getRandomNumber(0, theCanvas.width - SNAKE_SIZE);
+    appkleX = ax - (ax % SNAKE_SIZE);
+    const ay = getRandomNumber(0, theCanvas.height - SNAKE_SIZE);
+    appleY = ay - (ay % SNAKE_SIZE);
+}
 
 snakeHead.onload = loadGame;
 
 function loadGame() {
     backgroundMusic.play();
-    let ax = getRandomNumber(0, theCanvas.width - SNAKE_SIZE);
-    appkleX = ax - (ax % SNAKE_SIZE);
-    let ay = getRandomNumber(0, theCanvas.height - SNAKE_SIZE)
-    appleY = ay - (ay % SNAKE_SIZE);
-
+    createRandomApplePosition();
     gameLoop = setInterval(() => { 
         context.clearRect(0, 0, theCanvas.width, theCanvas.height);
         switch(direction) {
@@ -65,6 +68,13 @@ function loadGame() {
             gameOver();
             
             return;
+        }
+
+        if (x === appkleX && y === appleY) {
+            backgroundMusic.pause();
+            crunchSound.play();
+            createRandomApplePosition();
+            score++;
         }
 
         context.drawImage(snakeHead, x, y);
