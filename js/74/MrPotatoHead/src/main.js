@@ -1,5 +1,7 @@
 import './MrPotatoHead.css';
-import music from './assets/music.mp3';
+import musicUrl from './assets/music.mp3';
+
+const music = new Audio(musicUrl);
 
 const controlsElem = document.querySelector('#controls');
 const mainElem = document.querySelector('#main');
