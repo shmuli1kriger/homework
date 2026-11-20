@@ -1,0 +1,14 @@
+label {
+    margin: 1rem;
+}
+#result {
+    width: 50%;
+    text-align: center;
+    margin:2em 22%;
+    padding: 2em;
+    border: 1px solid black;
+    background-color: cyan;
+}
+#amount {
+    width: 8ch;
+}
