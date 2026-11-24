@@ -1,0 +1,14 @@
+[
+    {"id": "1", 
+    "name": "chulent",
+    "ingredients": ["meat", "potatoes", "all sorts of beans"], 
+    "picture": "images/chulent.jpg"},
+    {"id": "2", 
+    "name": "macaroni", 
+    "ingredients": ["macaroni", "salt", "water"], 
+    "picture": "images/macaroni.jpg"},
+    {"id": "3", 
+    "name": "hard boiled eggs", 
+    "ingredients": ["eggs", "water"], 
+    "picture": "images/eggs.jpg"}
+]

@@ -1,0 +1,25 @@
+header h1 {
+  margin: 0.5rem 0;
+}
+
+#picture {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 1rem auto;
+  object-fit: cover;
+}
+
+#ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#ingredients li {
+  padding: 0.25rem 0;
+}
+
+#error {
+  color: red;
+}
