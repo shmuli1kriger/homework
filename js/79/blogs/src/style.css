@@ -1,0 +1,18 @@
+.userCard {
+  border: 1px solid black;
+  margin: 1em;
+  text-align: center;
+  background-color: rgba(248, 241, 196, 0.685);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  cursor: pointer;
+}
+.userName {
+  grid-column: 1;
+}
+.userWebsite {
+  grid-column: 3;
+}
+.userCompany {
+  grid-column: 2;
+}
