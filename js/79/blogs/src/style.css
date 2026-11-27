@@ -1,6 +1,8 @@
+
 .userCard {
   border: 1px solid black;
   margin: 1em;
+  padding: 1em;
   text-align: center;
   background-color: rgba(248, 241, 196, 0.685);
   display: grid;
@@ -15,4 +17,14 @@
 }
 .userCompany {
   grid-column: 2;
+}
+.postsCompName, .postsUserName {
+  text-align: center;
+}
+.post {
+  border: 1px solid black;
+  margin: 1em;
+  padding: 1em;
+  background-color: rgba(248, 241, 196, 0.685);
+  cursor: pointer;
 }

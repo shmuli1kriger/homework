@@ -3,6 +3,7 @@ import getUsers from './users.js';
 const app = document.querySelector('#app');
 const users = await getUsers();
 console.log(users);
+
 users.map(u => {
   const card = document.createElement('section');
   card.classList.add('userCard');
